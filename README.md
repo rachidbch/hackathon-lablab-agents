@@ -43,6 +43,8 @@ Tested with with Python 3.11
 
 5. Run the main agent and its side worker 
    ```
-   node workers/email-worker.js
+   # Run worker in the background
+   node workers/email-worker.js &
+   # Run Figaro 
    chainlit run app.py -w
    ```

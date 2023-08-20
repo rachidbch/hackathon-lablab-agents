@@ -1,0 +1,154 @@
+{
+    "id": "1692505932729-0",
+    "event": {
+        "id": "18a1135dde599e86",
+        "threadId": "18a1135dde599e86",
+        "labelIds": [
+            "CATEGORY_PERSONAL",
+            "INBOX"
+        ],
+        "snippet": "The email worker successfully received the previous test email. Now testing if the worker can catch this email and send it to the agent",
+        "payload": {
+            "partId": "",
+            "mimeType": "multipart/alternative",
+            "filename": "",
+            "headers": [
+                {
+                    "name": "Delivered-To",
+                    "value": "testuserhackathon123@gmail.com"
+                },
+                {
+                    "name": "Received",
+                    "value": "by 2002:a05:6a10:95ad:b0:4e4:be63:34d6 with SMTP id w13csp1190613pxn;        Sat, 19 Aug 2023 21:30:57 -0700 (PDT)"
+                },
+                {
+                    "name": "X-Received",
+                    "value": "by 2002:a0d:ebd6:0:b0:54f:9cd0:990 with SMTP id u205-20020a0debd6000000b0054f9cd00990mr3509724ywe.18.1692505857306;        Sat, 19 Aug 2023 21:30:57 -0700 (PDT)"
+                },
+                {
+                    "name": "ARC-Seal",
+                    "value": "i=1; a=rsa-sha256; t=1692505857; cv=none;        d=google.com; s=arc-20160816;        b=o8g/iJfnvujzBmmiDhW/kJ+rVz8iZwI6l1jkG5b/HONL3P8M/3qFK3dzC+Ormu2o1r         MogzhJ4yOsA1MB/k/RbBMzTYqMNBm3XEP7DYfnNi9Pv9ppZxZWSu+P8NZpCfO5udhszJ         HXLEvya4sRKN8FM1d1Wvy9A8WEhGOSF493OxACRFEThmjXNgyd9xsPJqOyL3bNliqvHC         SXo+v0V0pdfpP5y0ZP0ZG2e+jIJcbxqcGur9E15OZLEPufzxTLG1xbQm64dq8y4m++KL         HGKNt1RtQkK+bxhiQSNbG7TiUTGhEl5VVGA7bZKxPaUfoGjN9swornV96pe52c/O5Pcx         zsOA=="
+                },
+                {
+                    "name": "ARC-Message-Signature",
+                    "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:subject:message-id:date:from:mime-version:dkim-signature;        bh=zJQrlRdsgwUCKDxLMIsn4yhF4Zh+vyUqGd4zmD67LCY=;        fh=qhDLEGIjBx9r6CU7z0Ac3Cqak47b4BXg7c9kbk1mC6o=;        b=pL5TwE/zvSPZ2F2sWQPZQvrE1PJ6mMi9tpLzO6mEhnfuPS8IBT0OH3r/TOT2vVAy0J         3GrfLmKYEA7StrLxu1j8lE+H8AkreGY5z3RWtZDrPs/TnTGmCmHQgT6OCx4H4rrIokXn         aR3DGKPmre1GRWrIZwlpRvRM5MNSmz2ZiV8BG+SFk1ygcJyX9I3VY0PtCpZTJ/00qvIZ         5JamxYBtUaLSnKhe08FaYGvZ92HgDqWi0rz9MVZQmzkzrclXsbebZuZMnQMm/KNe8otU         IobVmZ2hlbwmK4GPNeRY1ZkCe/58z2NkTuE5ELjjw+hCfqYV94DZXT17YfgZ6WatuQ1j         MKyQ=="
+                },
+                {
+                    "name": "ARC-Authentication-Results",
+                    "value": "i=1; mx.google.com;       dkim=pass header.i=@gmail.com header.s=20221208 header.b=\"C/9zuDOd\";       spf=pass (google.com: domain of rachidbch@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rachidbch@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+                },
+                {
+                    "name": "Return-Path",
+                    "value": "<rachidbch@gmail.com>"
+                },
+                {
+                    "name": "Received",
+                    "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id u142-20020a0deb94000000b0058c54f4e07asor2456585ywe.9.2023.08.19.21.30.57        for <testuserhackathon123@gmail.com>        (Google Transport Security);        Sat, 19 Aug 2023 21:30:57 -0700 (PDT)"
+                },
+                {
+                    "name": "Received-SPF",
+                    "value": "pass (google.com: domain of rachidbch@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+                },
+                {
+                    "name": "Authentication-Results",
+                    "value": "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20221208 header.b=\"C/9zuDOd\";       spf=pass (google.com: domain of rachidbch@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rachidbch@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+                },
+                {
+                    "name": "DKIM-Signature",
+                    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20221208; t=1692505856; x=1693110656;        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject         :date:message-id:reply-to;        bh=zJQrlRdsgwUCKDxLMIsn4yhF4Zh+vyUqGd4zmD67LCY=;        b=C/9zuDOd3CozLYs7FW27wGDPG1/+GKi/8TW2bWYIR6ilVZcezJaysP9J+xPbfyGQEQ         G5czQkOxTUzxWrX75qUBcrZiFVr/NTc6K3glVLZPTq46fVOMLSAPAOjEk++st4u4C1pQ         ZFumBUDOEKV4OOG2Iwkg9veKY7M+Wox9FlFb75FhQoSV4CWNLB2hIyiOPudAG9hSmA1j         KRIeAQkAErPcFxqmo/v0qvwUzT7EMKs1dnketKQ8aamKTU8zQ9DkP3OtI9rYCG2lJ+Nc         UGLh2KNhLIYYnAslmyLa7XfXArV2yn8Ff4+loRxA81StjJa/vWDJOkkZHXQCqFaV3rIy         uw8A=="
+                },
+                {
+                    "name": "X-Google-DKIM-Signature",
+                    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20221208; t=1692505856; x=1693110656;        h=to:subject:message-id:date:from:mime-version:x-gm-message-state         :from:to:cc:subject:date:message-id:reply-to;        bh=zJQrlRdsgwUCKDxLMIsn4yhF4Zh+vyUqGd4zmD67LCY=;        b=VlMCyIA9BwtbjTt/XEMy+gXTnRlGh5gLW6I3kt2abXSd3LnGFZx3Ua6n/nf8SVz9U6         DMvwyldsnbc2he75LnPoMCy9U8bBHAARq5WPZFj3cDqspxnW8ltw8EG4CYix0xjGSiAO         Vcd0vokS6NKlKvgwbn+E5j6BheWKW14fFfsSVZN/50x21qC1YIgndReWPvjH+X/Of4Dy         o1O9Giz/IClAPJnppac+sTM53KwqjHcHNdSAoanOl7TH0Vy5T9IFx4zkaoOlKa6zjtsu         lwQ3AlxuI7EO1x7UkARc5S6j5SV5QXcnlT/pJw6ajlSLdVA2HebMM0L4nkzdOUAeurGU         CEZw=="
+                },
+                {
+                    "name": "X-Gm-Message-State",
+                    "value": "AOJu0Yyv5WPn+8/+ydbS3okBD3HZezUvxHkfy3jaqBTokc64Gn6b7r0G xmyaJllCPEUAOtXnUSUDmDNnUxh/xkd/dpL8uTmLLfZnhH2z+Q=="
+                },
+                {
+                    "name": "X-Google-Smtp-Source",
+                    "value": "AGHT+IHRNrlEjq7nZTno9lKT/zPesJZ2+a2r+prfribj6unhedPn+FMBk5TqwunvM82GL7upsQgGqxad5GuZ2WBP36c="
+                },
+                {
+                    "name": "X-Received",
+                    "value": "by 2002:a81:8395:0:b0:589:fb69:a4ef with SMTP id t143-20020a818395000000b00589fb69a4efmr3067070ywf.3.1692505856711; Sat, 19 Aug 2023 21:30:56 -0700 (PDT)"
+                },
+                {
+                    "name": "MIME-Version",
+                    "value": "1.0"
+                },
+                {
+                    "name": "From",
+                    "value": "rachid <rachidbch@gmail.com>"
+                },
+                {
+                    "name": "Date",
+                    "value": "Sun, 20 Aug 2023 05:30:20 +0100"
+                },
+                {
+                    "name": "Message-ID",
+                    "value": "<CAE0Ovmyr3cM-D15+fX1D2Pt9SMOz7V1KhSEv_C=8f70S0K3Lgg@mail.gmail.com>"
+                },
+                {
+                    "name": "Subject",
+                    "value": "Test email worker - agent communication"
+                },
+                {
+                    "name": "To",
+                    "value": "testuserhackathon123@gmail.com"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/alternative; boundary=\"0000000000005ea2730603533ac9\""
+                }
+            ],
+            "body": {
+                "size": 0.0
+            },
+            "parts": [
+                {
+                    "partId": "0",
+                    "mimeType": "text/plain",
+                    "filename": "",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "text/plain; charset=\"UTF-8\""
+                        }
+                    ],
+                    "body": {
+                        "size": 138.0,
+                        "data": "VGhlIGVtYWlsIHdvcmtlciBzdWNjZXNzZnVsbHkgcmVjZWl2ZWQgdGhlIHByZXZpb3VzIHRlc3QgZW1haWwuDQpOb3cgdGVzdGluZyBpZiB0aGUgd29ya2VyIGNhbiBjYXRjaCB0aGlzIGVtYWlsIGFuZCBzZW5kIGl0IHRvIHRoZSBhZ2VudA0K"
+                    }
+                },
+                {
+                    "partId": "1",
+                    "mimeType": "text/html",
+                    "filename": "",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "text/html; charset=\"UTF-8\""
+                        }
+                    ],
+                    "body": {
+                        "size": 161.0,
+                        "data": "PGRpdiBkaXI9Imx0ciI-VGhlIGVtYWlsIHdvcmtlciBzdWNjZXNzZnVsbHkgcmVjZWl2ZWQgdGhlIHByZXZpb3VzIHRlc3QgZW1haWwuPGJyPk5vdyB0ZXN0aW5nIGlmIHRoZSB3b3JrZXIgY2FuIGNhdGNoIHRoaXMgZW1haWwgYW5kIHNlbmQgaXQgdG8gdGhlIGFnZW50PC9kaXY-DQo="
+                    }
+                }
+            ]
+        },
+        "sizeEstimate": 5388.0,
+        "historyId": "2811",
+        "internalDate": "1692505820000",
+        "decodedContent": "The email worker successfully received the previous test email.\r\nNow testing if the worker can catch this email and send it to the agent\r\n"
+    },
+    "metadata": {
+        "name": "",
+        "emit_id": "2UEXu8B0P8d505Nnrqs9hHo5t9U",
+        "summary": "New email: Test email worker - agent communication",
+        "id": "18a1135dde599e86",
+        "emitter_id": "dc_6RuzqKp"
+    },
+    "indexed_at_ms": 1692505932727
+}
